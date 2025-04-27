@@ -170,8 +170,8 @@ change num workers from 0 to 1
 
 ## Development Tasks
 
--[ ] Refactor into an object-oriented programming (OOP) structure.
+- [ ] Refactor into an object-oriented programming (OOP) structure.
 
--[ ] Add support for more large language models (LLMs) in `report_builder`.
+- [ ] Add support for more large language models (LLMs) in `report_builder`.
 
--[ ] Expand platform support (e.g., Linux, macOS).
+- [ ] Expand platform support (e.g., Linux, macOS).
