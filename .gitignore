@@ -1,0 +1,17 @@
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+logs/
+**/logs/
+.venv
+**/recs/
+*.ipynb
+
+## local folders for debugging
+samples/
+outs/
+my_exported
+src/meetings_reporter/asr_pipeline/outputs/

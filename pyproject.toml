@@ -1,0 +1,48 @@
+[project]
+name = "meetings-reporter"
+version = "0.1.0"
+description = "Real-time recorder, transcriper, and reporter"
+readme = "README.md"
+authors = [
+    { email = "abdohedya19@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "soundcard==0.4.4",
+    "soundfile==0.13.1",
+    "pydub==0.25.1",
+    "colorama==0.4.6"
+]
+
+[project.optional-dependencies]
+all=[
+    "torch==2.6.0",
+    "torchaudio==2.6.0",
+    "numpy==1.26.3",
+    "nemo-toolkit[asr]>=2.2.1",
+    "whisperx==3.3.1",
+    "langchain-google-genai>=2.1.3",
+    "langchain-core>=0.3.56",
+]
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu126" },
+]
+torchaudio = [
+    { index = "pytorch-cu126" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+recorder = "meetings_reporter.recorder.__main__:main"
+asr = "meetings_reporter.asr_pipeline.__main__:main"
+pipeline = "meetings_reporter.__main__:main"
+
