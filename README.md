@@ -15,7 +15,8 @@
 
 **meetings-reporter** is an all-in-one solution for recording meetings, transcribing audio, diarizing speakers, and generating meeting reports.
 The project is modular, consisting of three packages, each can be used independently or together as a complete pipeline.
-![ProjectArchitecture](https://github.com/user-attachments/assets/a087b176-a1d9-42b6-a53b-0abb04b0482a)
+
+![ProjectArchitecture](https://github.com/user-attachments/assets/65bd3479-7259-466e-b6d4-71a528933578)
 
 ## Overview
 `meetings-reporter` is an all-in-one tool for recording, transcribing, and generating reports from meetings. It consists of three independent packages:
